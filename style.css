@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "Norse";
+  src: url("Norse-Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  width: 1300px;
+  height: 100vh;
+  background-color: #f9fafb;
+  margin: 0 auto;
+}
+
+.left {
+  background-image: url(background.jpg);
+  background-size: 150%;
+  width: 35%;
+  height: 100%;
+  padding-top: 15%;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-color: rgba(17, 17, 17, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 30%;
+}
+
+.logo span {
+  color: #f9fafb;
+  font-family: 'Norse', bold;
+  font-size: 90px;
+}
