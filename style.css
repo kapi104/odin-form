@@ -5,11 +5,14 @@
   src: url("Norse-Bold.otf");
 }
 
+:root {
+  font-family: 'Roboto Mono', monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(34, 34, 34);
-  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -26,6 +29,7 @@ body {
   height: 100%;
   padding-top: 15%;
   box-sizing: border-box;
+  float: left;
 }
 
 .logo {
@@ -44,4 +48,89 @@ body {
   color: #f9fafb;
   font-family: 'Norse', bold;
   font-size: 90px;
+}
+
+.right {
+  float: left;
+  width: 65%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  color: black;
+  font-weight: 700;
+  font-size: 21px;
+  margin: 0 50px;
+}
+
+.formArea {
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0px 4px 18px -4px rgba(66, 68, 90, 1);
+}
+
+.form {
+  display: flex;
+}
+
+.formRight, .formLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+input {
+  margin-bottom: 13px;
+  border: #E5E7EB 1px solid;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: blue 1px solid;
+  border-radius: 3px;
+  box-shadow: 3px 3px 14px -7px rgb(20, 20, 20);
+  outline: none;
+}
+
+label {
+  font-size: 14px;
+}
+
+.error {
+  border: red 1px solid;
+}
+
+.form span {
+  font-size: 10px;
+  color: red;
+}
+
+.invisible {
+  display: none;
+}
+
+input[type="submit"] {
+  background-color: #596D48;
+  color: #E5E7EB;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 49px;
+  box-shadow: 8px 8px 24px -16px rgba(66, 68, 90, 1);
+}
+
+.logIn {
+  margin-left: 50px;
+  font-weight: 600;
+}
+
+.logIn a {
+  text-decoration: none;
+  color: #596D48;
 }
